@@ -28,6 +28,24 @@ class ProfileSerializer(serializers.ModelSerializer):
         if attachment and attachment.file:
             return attachment.file.url
         return None
+    
+    def validate_phone_number(self, value):
+        if not value:
+            raise serializers.ValidationError("Phone number is required")
+
+        if not value.isdigit():
+            raise serializers.ValidationError("Phone number must be digits")
+
+        if value.startswith("09"):
+            raise serializers.ValidationError("Phone number must not start with 09")
+
+        if value.startswith("0"):
+            raise serializers.ValidationError("Phone number must not start with 0")
+
+        if len(value) < 8 or len(value) > 10:
+            raise serializers.ValidationError("Phone number must be 8-10 digits")
+
+        return value
 
 
 class SimpleProfileSerializer(serializers.ModelSerializer):
