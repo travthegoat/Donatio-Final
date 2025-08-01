@@ -2,12 +2,10 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# Copy project files *before* syncing deps
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-# Copy the rest of your code
 COPY . .
 
 EXPOSE 8001

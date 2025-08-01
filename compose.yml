@@ -12,7 +12,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5433:5432"
 
   donatio_backend:
     build: ./donatio-django
@@ -25,7 +25,6 @@ services:
       DATABASE_URL: postgresql://postgres:postgres@db:5432/donatio
     depends_on: 
       - db
-
 
   donatio_chatbot:
     build: ./donatio-chatbot

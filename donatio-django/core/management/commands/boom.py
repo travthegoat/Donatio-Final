@@ -28,6 +28,7 @@ class Command(BaseCommand):
         self.stdout.write("")
         self.stdout.write(self.style.NOTICE("Step 1: Applying migrations..."))
         self.stdout.write("=" * 50)
+        management.call_command("makemigrations")
         management.call_command("migrate")
         self.stdout.write("")
 
