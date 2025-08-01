@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:latest
+    container_name: donatio-db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: donatio
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  donatio_backend:
+    build: ./donatio-django
+    container_name: donatio-backend
+    ports: 
+      - "8000:8000"
+    volumes:
+      - ./donatio-django:/app
+    environment: 
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/donatio
+    depends_on: 
+      - db
+
+
+  donatio_chatbot:
+    build: ./donatio-chatbot
+    container_name: donatio-chatbot
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./donatio-chatbot:/app
+    environment: 
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/donatio
+    depends_on: 
+      - db
+
+#   donatio_kpay:
+#     build: ./donatio-kpay
+#     container_name: donatio-kpay
+#     ports:
+#       - "8002:8002"
+#     volumes:
+#       - ./donatio-kpay:/app
+#     depends_on: 
+#       - db
+      
+volumes:
+  postgres_data:

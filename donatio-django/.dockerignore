@@ -1,0 +1,37 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.venv
+
+# Environment files (don't include secrets)
+.env
+*.env
+
+# Git and other VCS
+.git
+.gitignore
+
+# Node modules (if you have any frontend stuff)
+node_modules/
+
+# Static files (usually collected at build or runtime)
+staticfiles/
+
+# Logs
+*.log
+
+# Docker files
+docker-compose.override.yml
+.dockerignore
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Tests (optional, if you don't want them in the image)
+tests/

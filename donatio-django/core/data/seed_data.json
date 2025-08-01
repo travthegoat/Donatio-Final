@@ -1,0 +1,455 @@
+[
+    {
+      "admin": "bot2",
+      "organization_name": "Bright Future Initiative",
+      "organization_type": "education",
+      "organization_description": "Empowering youth through scholarships and digital literacy in rural Shan State.",
+      "organization_phone": "09788544233",
+      "organization_email": "info@brightfuture.org.mm",
+      "donations": [
+        { "title": "Monthly Donor - July", "amount": 120.0 },
+        { "title": "Tech Grant - 2025", "amount": 950.0 }
+      ],
+      "disbursements": [
+        { "title": "Scholarship Awards", "amount": 400.0 },
+        { "title": "Computer Lab Setup", "amount": 300.0 }
+      ],
+      "activity": [
+        {
+          "title": "Scholarship Distribution",
+          "description": "Awarded scholarships to 40 high school students in rural Taunggyi.",
+          "location": "Shan State"
+        },
+        {
+          "title": "Digital Skills Workshop",
+          "description": "Trained 80 students in basic coding and Microsoft Office.",
+          "location": "Shan State"
+        }
+      ],
+      "events": [
+        {
+          "title": "Annual Youth Forum",
+          "description": "Platform for students and educators to share education challenges and solutions.",
+          "target_amount": 2000.0
+        },
+        {
+          "title": "Coding for Kids Drive",
+          "description": "Fundraising to expand coding bootcamps in rural middle schools.",
+          "target_amount": 1500.0
+        }
+      ]
+    },
+    {
+      "admin": "bot1",
+      "organization_name": "EduLight Myanmar",
+      "organization_type": "education",
+      "organization_description": "Dedicated to providing solar-powered digital learning kits to off-grid schools.",
+      "organization_phone": "09933447889",
+      "organization_email": "support@edulightmm.org",
+      "donations": [
+        { "title": "One-Time Donor - May", "amount": 300.0 },
+        { "title": "NGO Partnership Grant", "amount": 1500.0 }
+      ],
+      "disbursements": [
+        { "title": "Solar Kit Deployment", "amount": 1000.0 },
+        { "title": "Teacher Tech Training", "amount": 200.0 }
+      ],
+      "activity": [
+        {
+          "title": "Remote Learning Pilot",
+          "description": "Implemented offline learning servers in 6 rural schools.",
+          "location": "Magway Region"
+        }
+      ],
+      "events": [
+        {
+          "title": "Solar School Fundraiser",
+          "description": "Community event to raise awareness and funds for solar learning solutions.",
+          "target_amount": 4000.0
+        }
+      ]
+    },
+    {
+      "admin": "bot2",
+      "organization_name": "Learning Roots Foundation",
+      "organization_type": "education",
+      "organization_description": "Supports early childhood education by building preschools in underserved villages.",
+      "organization_phone": "09877654231",
+      "organization_email": "hello@learningroots.org.mm",
+      "donations": [
+        { "title": "Preschool Campaign", "amount": 700.0 },
+        { "title": "Private Donor", "amount": 250.0 }
+      ],
+      "disbursements": [
+        { "title": "Construction Materials", "amount": 600.0 },
+        { "title": "Teacher Recruitment", "amount": 100.0 }
+      ],
+      "activity": [
+        {
+          "title": "New Preschool Opened",
+          "description": "Inaugurated a preschool in Hpa-An township with 60 enrolled children.",
+          "location": "Kayin State"
+        }
+      ],
+      "events": [
+        {
+          "title": "Playground Project Drive",
+          "description": "Fundraiser to build safe playgrounds for village preschools.",
+          "target_amount": 2000.0
+        }
+      ]
+    },
+    {
+      "admin": "bot1",
+      "organization_name": "Tomorrow’s Leaders Network",
+      "organization_type": "education",
+      "organization_description": "Developing leadership and soft skills in high school students across urban Myanmar.",
+      "organization_phone": "09911224455",
+      "organization_email": "leaders@tomorrowmm.org",
+      "donations": [
+        { "title": "July Corporate Match", "amount": 1000.0 },
+        { "title": "Startup Sponsorship", "amount": 600.0 }
+      ],
+      "disbursements": [
+        { "title": "Workshop Hosting", "amount": 300.0 },
+        { "title": "Trainer Fees", "amount": 250.0 }
+      ],
+      "activity": [
+        {
+          "title": "Leadership Bootcamp",
+          "description": "Hosted a 5-day camp for 80 students from Yangon and Nay Pyi Taw.",
+          "location": "Yangon Region"
+        }
+      ],
+      "events": [
+        {
+          "title": "Future Skills Summit",
+          "description": "Youth conference to fund leadership projects across the country.",
+          "target_amount": 5000.0
+        }
+      ]
+    },
+    {
+      "admin": "bot2",
+      "organization_name": "Teach Forward Alliance",
+      "organization_type": "education",
+      "organization_description": "Building teacher capacity in science and math education.",
+      "organization_phone": "09722334455",
+      "organization_email": "info@teachforward.org.mm",
+      "donations": [
+        { "title": "Education Grant", "amount": 1500.0 }
+      ],
+      "disbursements": [
+        { "title": "Training Resources", "amount": 600.0 },
+        { "title": "Regional Workshop", "amount": 500.0 }
+      ],
+      "activity": [
+        {
+          "title": "STEM Teacher Workshop",
+          "description": "Trained 60 teachers on practical science teaching in monastic schools.",
+          "location": "Sagaing Region"
+        }
+      ],
+      "events": [
+        {
+          "title": "STEM Boost Campaign",
+          "description": "Fundraising for lab equipment and teacher tools.",
+          "target_amount": 3500.0
+        }
+      ]
+    },
+    {
+      "admin": "bot1",
+      "organization_name": "Golden Learning Trust",
+      "organization_type": "education",
+      "organization_description": "Facilitating mobile libraries for children in remote areas of Myanmar.",
+      "organization_phone": "09988776655",
+      "organization_email": "contact@goldenlearning.org",
+      "donations": [
+        { "title": "Mobile Library Drive", "amount": 900.0 }
+      ],
+      "disbursements": [
+        { "title": "Vehicle Maintenance", "amount": 250.0 },
+        { "title": "Book Inventory", "amount": 300.0 }
+      ],
+      "activity": [
+        {
+          "title": "Library on Wheels",
+          "description": "Visited 12 villages, reaching over 500 students with story books and reading time.",
+          "location": "Ayeyarwady Region"
+        }
+      ],
+      "events": [
+        {
+          "title": "Books for All Campaign",
+          "description": "A community push to gather new and used books for mobile libraries.",
+          "target_amount": 2500.0
+        }
+      ]
+    },
+    {
+      "admin": "bot2",
+      "organization_name": "Peaceful Minds Education Hub",
+      "organization_type": "education",
+      "organization_description": "Promotes inclusive education for children with disabilities.",
+      "organization_phone": "09661122334",
+      "organization_email": "inclusion@peacefulminds.org",
+      "donations": [
+        { "title": "Special Needs Support Fund", "amount": 1200.0 }
+      ],
+      "disbursements": [
+        { "title": "Braille Equipment", "amount": 500.0 },
+        { "title": "Special Education Training", "amount": 400.0 }
+      ],
+      "activity": [
+        {
+          "title": "Inclusive Learning Workshop",
+          "description": "Introduced audio/visual learning materials for children with visual impairments.",
+          "location": "Mandalay Region"
+        }
+      ],
+      "events": [
+        {
+          "title": "Support Inclusion Drive",
+          "description": "Raising funds for accessible learning tools.",
+          "target_amount": 3000.0
+        }
+      ]
+    },
+    {
+      "admin": "bot1",
+      "organization_name": "New Horizons Digital School",
+      "organization_type": "education",
+      "organization_description": "Bridging the tech divide by teaching programming to underrepresented students.",
+      "organization_phone": "09448877665",
+      "organization_email": "admin@newhorizons.org.mm",
+      "donations": [
+        { "title": "Tech Volunteer Grant", "amount": 1100.0 },
+        { "title": "Local Business Support", "amount": 400.0 }
+      ],
+      "disbursements": [
+        { "title": "Curriculum Development", "amount": 300.0 },
+        { "title": "Internet Services", "amount": 150.0 }
+      ],
+      "activity": [
+        {
+          "title": "Python Basics Camp",
+          "description": "Taught Python to 100 high school students through weekend classes.",
+          "location": "Yangon Region"
+        }
+      ],
+      "events": [
+        {
+          "title": "Hackathon for Kids",
+          "description": "Fundraiser to run regional youth hackathons.",
+          "target_amount": 3500.0
+        }
+      ]
+    },
+    {
+        "admin": "bot2",
+        "organization_name": "BridgeLearn Network",
+        "organization_type": "education",
+        "organization_description": "Connecting youth in conflict-affected areas with learning opportunities and mentorship.",
+        "organization_phone": "09777788990",
+        "organization_email": "contact@bridgelearn.org.mm",
+        "donations": [
+          { "title": "Peace Education Fund", "amount": 950.0 },
+          { "title": "July Campaign", "amount": 220.0 }
+        ],
+        "disbursements": [
+          { "title": "Learning Materials", "amount": 300.0 },
+          { "title": "Mentor Training", "amount": 150.0 }
+        ],
+        "activity": [
+          {
+            "title": "Education for Peace Program",
+            "description": "Facilitated online learning for 150 displaced students.",
+            "location": "Kachin State"
+          }
+        ],
+        "events": [
+          {
+            "title": "Rebuild & Learn Fundraiser",
+            "description": "Supporting learning spaces in IDP camps.",
+            "target_amount": 4000.0
+          }
+        ]
+      },
+      {
+        "admin": "bot1",
+        "organization_name": "Village Learning Circles",
+        "organization_type": "education",
+        "organization_description": "Community-led weekend schools focusing on literacy and life skills.",
+        "organization_phone": "09999988211",
+        "organization_email": "info@vlc.org.mm",
+        "donations": [
+          { "title": "Community Donor Pool", "amount": 500.0 }
+        ],
+        "disbursements": [
+          { "title": "Volunteer Support", "amount": 100.0 },
+          { "title": "Blackboard Kits", "amount": 80.0 }
+        ],
+        "activity": [
+          {
+            "title": "Village Literacy Program",
+            "description": "40 volunteers taught 120 children basic literacy in Rakhine villages.",
+            "location": "Rakhine State"
+          }
+        ],
+        "events": [
+          {
+            "title": "Books & Bricks Campaign",
+            "description": "Funding weekend learning shelters in flood-prone areas.",
+            "target_amount": 1800.0
+          }
+        ]
+      },
+      {
+        "admin": "bot2",
+        "organization_name": "MindBloom Learning Studio",
+        "organization_type": "education",
+        "organization_description": "Focuses on mental health literacy and emotional education for teenagers.",
+        "organization_phone": "09441122334",
+        "organization_email": "hello@mindbloom.org.mm",
+        "donations": [
+          { "title": "Teen Mental Health Drive", "amount": 600.0 }
+        ],
+        "disbursements": [
+          { "title": "Wellness Materials", "amount": 150.0 },
+          { "title": "Counselor Sessions", "amount": 200.0 }
+        ],
+        "activity": [
+          {
+            "title": "Teen Talks Sessions",
+            "description": "Delivered emotional wellness sessions in 5 high schools.",
+            "location": "Yangon Region"
+          }
+        ],
+        "events": [
+          {
+            "title": "Safe Mind Fundraiser",
+            "description": "Raising awareness and support for mental health curriculum in schools.",
+            "target_amount": 2500.0
+          }
+        ]
+      },
+      {
+        "admin": "bot1",
+        "organization_name": "EduWomen Collective",
+        "organization_type": "education",
+        "organization_description": "Empowering girls in rural Myanmar through education, mentorship, and career prep.",
+        "organization_phone": "09765433210",
+        "organization_email": "support@eduwomen.org.mm",
+        "donations": [
+          { "title": "Girls Education Trust", "amount": 800.0 },
+          { "title": "Monthly Supporter", "amount": 120.0 }
+        ],
+        "disbursements": [
+          { "title": "Mentorship Program", "amount": 250.0 },
+          { "title": "Bicycle Distribution", "amount": 200.0 }
+        ],
+        "activity": [
+          {
+            "title": "Girls to School Campaign",
+            "description": "Helped 50 girls continue high school by providing transport and guidance.",
+            "location": "Bago Region"
+          }
+        ],
+        "events": [
+          {
+            "title": "Pathway to Her Future",
+            "description": "Crowdfunding for girls’ education resources and workshops.",
+            "target_amount": 3500.0
+          }
+        ]
+      },
+      {
+        "admin": "bot2",
+        "organization_name": "CodeBridge Myanmar",
+        "organization_type": "education",
+        "organization_description": "Prepares youth for tech careers by teaching web development and digital skills.",
+        "organization_phone": "09334455667",
+        "organization_email": "hello@codebridge.org.mm",
+        "donations": [
+          { "title": "Tech Accelerator Grant", "amount": 1000.0 }
+        ],
+        "disbursements": [
+          { "title": "Web Dev Bootcamp", "amount": 500.0 },
+          { "title": "Laptop Rentals", "amount": 180.0 }
+        ],
+        "activity": [
+          {
+            "title": "Frontend Fundamentals",
+            "description": "Taught HTML/CSS/JS to 60 students through hybrid learning model.",
+            "location": "Mon State"
+          }
+        ],
+        "events": [
+          {
+            "title": "Bridge the Gap Hackathon",
+            "description": "Fundraising to support rural tech learners and female coders.",
+            "target_amount": 3000.0
+          }
+        ]
+      },
+      {
+        "admin": "bot1",
+        "organization_name": "Greenleaf Academy Outreach",
+        "organization_type": "education",
+        "organization_description": "Educating youth on environmental conservation and sustainable agriculture.",
+        "organization_phone": "09811223344",
+        "organization_email": "team@greenleaf.org.mm",
+        "donations": [
+          { "title": "EcoEd Sponsor Drive", "amount": 670.0 }
+        ],
+        "disbursements": [
+          { "title": "Farming Kit Distribution", "amount": 220.0 },
+          { "title": "Eco-Curriculum Printing", "amount": 130.0 }
+        ],
+        "activity": [
+          {
+            "title": "Youth Eco Camp",
+            "description": "Taught organic farming and conservation to 90 students.",
+            "location": "Chin State"
+          }
+        ],
+        "events": [
+          {
+            "title": "Seeds of Change Fund",
+            "description": "Funding eco-literacy for primary and middle school students.",
+            "target_amount": 2700.0
+          }
+        ]
+      },
+      {
+        "admin": "bot2",
+        "organization_name": "NextChapter Literacy Lab",
+        "organization_type": "education",
+        "organization_description": "Improving literacy rates through story-driven education and local language content.",
+        "organization_phone": "09661144556",
+        "organization_email": "info@nextchapter.org.mm",
+        "donations": [
+            { "title": "Storyteller Fund", "amount": 780.0 }
+        ],
+        "disbursements": [
+            { "title": "Local Language Storybooks", "amount": 400.0 },
+            { "title": "Mobile Reading Corners", "amount": 170.0 }
+        ],
+        "activity": [
+            {
+                "title": "Read Aloud Festival",
+                "description": "Hosted storytelling events in 6 rural communities.",
+                "location": "Tanintharyi Region"
+            }
+        ],
+        "events": [
+            {
+                "title": "Read to Lead Campaign",
+                "description": "Supporting language-based learning in local dialects.",
+                "target_amount": 3200.0
+            }
+        ]
+    }
+]
+  
