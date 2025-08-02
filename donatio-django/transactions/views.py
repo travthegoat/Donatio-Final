@@ -12,7 +12,7 @@ from organizations.models import Organization
 
 from .constants import TransactionStatus, TransactionType
 from .filters import TransactionFilter
-from .models import Transaction
+from .models import Transaction, Event
 from .serializers import TransactionSerializer, UpdateTransactionSerializer
 
 
@@ -58,19 +58,24 @@ class TransactionViewSet(viewsets.ModelViewSet):
         return self.queryset.filter(organization__pk=organization_pk)
 
     def perform_create(self, serializer):
-
         # Access validated data safely
         transaction_type = serializer.validated_data.get("type")
         amount = serializer.validated_data.get("amount")
+        
+        # Get event from request data since it's not in validated_data (read-only field)
+        event = Event.objects.get(pk=self.request.data.get("event"))
+        
         # Auto-set title if donation and no title provided
         if transaction_type == TransactionType.DONATION:
             serializer.validated_data["title"] = (
                 f"{self.request.user.username} donated {amount}"
             )
 
-        serializer.save(
+        # Create the transaction with organization and actor
+        transaction = serializer.save(
             organization=self.organization,
             actor=self.request.user,
+            event=event,
         )
 
     def perform_destroy(self, instance):

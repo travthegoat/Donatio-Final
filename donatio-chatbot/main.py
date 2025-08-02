@@ -6,31 +6,19 @@ from langchain_core.prompts import ChatPromptTemplate
 from typing_extensions import Annotated
 from langgraph.types import Command
 from langchain_core.prompts import PromptTemplate
+import os
 from langchain_community.tools.sql_database.tool import QuerySQLDatabaseTool
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
 from pydantic import BaseModel
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 import uvicorn 
-import os
+from fastapi.middleware.cors import CORSMiddleware
 
 load_dotenv()
-
-app = FastAPI()
-
-# Add CORS middleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins
-    allow_credentials=True,
-    allow_methods=["*"],  # Allows all methods
-    allow_headers=["*"],  # Allows all headers
-)
-
 model = ChatGroq(model_name="llama-3.3-70b-versatile")
 
-db = SQLDatabase.from_uri(os.getenv("DATABASE_URL"))
+db = SQLDatabase.from_uri(os.getenv('DATABASE_URL'))
 
 class State(TypedDict):
     query: str 
@@ -64,9 +52,9 @@ class QueryOutput(TypedDict):
     
 
 def supervisor(state: State) -> Command:
-    if state["sender_role"] == "user":
+    if state["sender_role"] == "donar":
         return Command(goto="user_agent", update={})
-    elif state["sender_role"] == "org":
+    elif state["sender_role"] == "organization":
         return Command(goto="org_agent", update={})
     return Command(goto=END, update={})
 
@@ -171,7 +159,7 @@ builder.add_edge(START, "supervisor")
 
 builder.add_conditional_edges(
     "supervisor",
-    lambda s: "write_user_query" if s["sender_role"] == "user" else "write_org_query",
+    lambda s: "write_user_query" if s["sender_role"] == "donar" else "write_org_query",
     {"write_user_query": "write_user_query", "write_org_query": "write_org_query"}
 )
 
@@ -186,6 +174,15 @@ graph = builder.compile(checkpointer=memory)
 graph = builder.compile(checkpointer=memory)
 
 app = FastAPI(name="SQL_chatbot")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000/"], 
+    allow_credentials=True,
+    allow_methods=["*"], 
+    allow_headers=["*"],  
+)
+
 
 class ModelGenerate(BaseModel):
     sender_role: str 

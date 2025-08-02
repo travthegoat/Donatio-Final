@@ -42,6 +42,7 @@ class TransactionSerializer(serializers.ModelSerializer):
             "id",
             "organization",
             "actor",
+            "event",
             "status",
             "uploaded_attachments",
             "attachments",
