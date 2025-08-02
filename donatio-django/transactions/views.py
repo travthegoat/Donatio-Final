@@ -63,20 +63,28 @@ class TransactionViewSet(viewsets.ModelViewSet):
         amount = serializer.validated_data.get("amount")
         
         # Get event from request data since it's not in validated_data (read-only field)
-        event = Event.objects.get(pk=self.request.data.get("event"))
         
         # Auto-set title if donation and no title provided
         if transaction_type == TransactionType.DONATION:
             serializer.validated_data["title"] = (
                 f"{self.request.user.username} donated {amount}"
             )
+            event = Event.objects.get(pk=self.request.data.get("event"))
 
-        # Create the transaction with organization and actor
-        transaction = serializer.save(
-            organization=self.organization,
-            actor=self.request.user,
-            event=event,
-        )
+            # Create the transaction with organization and actor
+            serializer.save(
+                organization=self.organization,
+                actor=self.request.user,
+                event=event
+            )
+            
+            
+        elif transaction_type == TransactionType.DISBURSEMENT:
+            serializer.save(
+                organization=self.organization,
+                actor=self.request.user,
+            )
+
 
     def perform_destroy(self, instance):
         if instance.type == TransactionType.DONATION or instance.status in [
